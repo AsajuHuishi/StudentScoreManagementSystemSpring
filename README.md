@@ -13,7 +13,7 @@
 [MySQL+java: 实现学生成绩管理系统（1.0版本）](https://blog.csdn.net/qq_36937684/article/details/108757156) <br>
 [MySQL+java: 实现学生成绩管理系统（2.0版本）](https://blog.csdn.net/qq_36937684/article/details/112502793)
 ## 项目结构
-<br>
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210119164304335.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTM3Njg0,size_16,color_FFFFFF,t_70)
 
 文件    | 功能
