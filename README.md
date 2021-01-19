@@ -1,4 +1,8 @@
 # Spring学生成绩管理系统（Service+Dao）
+
+## 简介
+本文基于Spring5框架实现一个简单的学生成绩管理系统。它使用Druid数据库连接池，以及Spring提供的JdbcTemplate模板，实现Dao层和Service层的基本功能。对应文章见[Spring 实现学生成绩管理系统](https://blog.csdn.net/qq_36937684/article/details/112844468)
+
 ## 任务
 <center><img src="https://img-blog.csdnimg.cn/20200923171232277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTM3Njg0,size_16,color_FFFFFF,t_70#pic_center"/></center>
 
@@ -26,6 +30,23 @@ StuDaoImpl.java | Dao层接口实现类，封装数据库连接，增删改查�
 StuService.java| Service层，实现具体业务操作（菜单）
 TestMenu.java|测试主方法
 bean.xml| 配置文件，配置`Druid`数据库连接池+`JdbcTemplate`
+
+## 使用
+使用MySQL生成表
+包括 学号，姓名，成绩，班级四个字段。
+```sql
+USE db58;
+
+DROP TABLE IF EXISTS stu_score;
+CREATE TABLE IF NOT EXISTS stu_score(
+	NO VARCHAR(10) unique,
+	NAME VARCHAR(20),
+	score FLOAT,
+	className INT
+);
+
+DESC stu_score;
+``` 
 
 ## 实现结果
 
